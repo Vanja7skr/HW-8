@@ -14,3 +14,46 @@ div > div > p:nth-child(-n+5) {
 p:nth-child(7) {
     color: green;
 }
+/* Завдання 2 */
+:root {
+--franch-background-color: red;
+--franch-color: black;
+}
+:root {
+--math-background-color: blue;
+--math-color: black;
+}
+:root {
+--angl-background-color: yellow;
+--angl-color: black;
+}
+#mathh > td:not(:nth-child(2n+1)) {
+    color: var(--math-color);
+    background-color: var(--math-background-color);
+}
+#angll > td:not(:nth-child(even)) {
+    color: var(--angl-color);
+    background-color: var(--angl-background-color);
+}
+#franchh > td:not(:nth-child(2n+1)) {
+    color: var(--franch-color);
+    background-color: var(--franch-background-color);
+}
+#rozklad > th:not(:nth-child(even)) {
+    background-color: red;
+}
+#rozklad > th:not(:nth-child(odd)) {
+    background-color: green;
+}
+#mathh > td:hover, td:active {
+    color: orange;
+    background-color: purple;
+}
+#angll >  td:hover, td:active {
+    color: orange;
+    background-color: purple;
+}
+#franchh >  td:hover, td:active {
+    color: orange;
+    background-color: purple;
+}
